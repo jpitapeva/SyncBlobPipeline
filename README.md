@@ -19,7 +19,7 @@ jobs:
     inputs:
       SourcePath: './images' #caminho dos arquivos das imagens
       azureSubscription: 'portal' #nome do devops service connection
-      Destination: 'AzureBlob'  #tipo de destino
+      Destination: 'AzureBlob'  #tipo de destino 'AzureBlob' | 'AzureVMs'
       storage: 'storagesteste' #nome do storage account
       ContainerName: 'img' #nome do container
 ```
