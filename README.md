@@ -18,7 +18,7 @@ jobs:
   - task: AzureFileCopy@6
     inputs:
       SourcePath: './images' #caminho dos arquivos das imagens
-      azureSubscription: 'portal' #nome do service connection
+      azureSubscription: 'portal' #nome do devops service connection
       Destination: 'AzureBlob'  #tipo de destino
       storage: 'storagesteste' #nome do storage account
       ContainerName: 'img' #nome do container
