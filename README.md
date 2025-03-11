@@ -1,6 +1,6 @@
 # SyncBlobPipeline
 
-Pipeline em azure devops para syncar imagens para dentro no azure blob;
+Pipeline em azure devops para syncar imagens do repositório para dentro no azure blob;
 
 # yaml 
 
