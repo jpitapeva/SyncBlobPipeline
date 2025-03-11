@@ -2,6 +2,27 @@
 
 Pipeline em azure devops para syncar imagens para dentro no azure blob;
 
+#yaml 
+
+```
+jobs:
+- job:
+  displayName: images
+  pool:
+    vmImage: windows-latest
+
+  steps:
+  - checkout: self
+    persistCredentials: true
+
+  - task: AzureFileCopy@6
+    inputs:
+      SourcePath: './images' #caminho dos arquivos das imagens
+      azureSubscription: 'portal' #nome do service connection
+      Destination: 'AzureBlob'  #tipo de destino
+      storage: 'storagesteste' #nome do storage account
+      ContainerName: 'img' #nome do container
+```
 
 # Evidência
 ![image](https://github.com/user-attachments/assets/628a554e-31c9-4ad4-b2ff-fde4a8f6a0e2)
