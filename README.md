@@ -7,7 +7,7 @@ Pipeline em azure devops para syncar imagens para dentro no azure blob;
 ```
 jobs:
 - job:
-  displayName: images
+  displayName: SyncImages
   pool:
     vmImage: windows-latest
 
