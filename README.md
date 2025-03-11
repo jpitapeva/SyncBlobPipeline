@@ -2,7 +2,7 @@
 
 Pipeline em azure devops para syncar imagens para dentro no azure blob;
 
-#yaml 
+# yaml 
 
 ```
 jobs:
